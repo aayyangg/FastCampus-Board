@@ -1,0 +1,171 @@
+# https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows에 의해 생성됨
+# https://www.toptal.com/developers/gitignore?templates=java,gradle,intellij+all,windows에서 편집하세요.
+
+### Intellij+모두 ###
+# JetBrains IDE 포함: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm 및 Rider
+# 참조: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# 사용자별 항목
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/사전
+.idea/**/shelf
+
+# AWS 사용자별
+.idea/**/aws.xml
+
+# 생성된 파일
+.idea/**/contentModel.xml
+
+# 민감하거나 변동률이 높은 파일
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# 그래들
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# 자동 가져오기 기능이 있는 Gradle 및 Maven
+# 자동 가져오기 기능이 있는 Gradle 또는 Maven을 사용하는 경우 모듈 파일을 제외해야 합니다.
+# 다시 생성되므로 이탈이 발생할 수 있습니다. 사용하는 경우 주석을 해제하세요.
+# 자동 가져오기.
+# .아이디어/아티팩트
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .아이디어/모듈
+# *.iml
+# *.ipr
+
+# CMake
+cmake-빌드-*/
+
+# 몽고 익스플로러 플러그인
+.idea/**/mongoSettings.xml
+
+# 파일 기반 프로젝트 형식
+*.iws
+
+# 인텔리J
+밖으로/
+
+# mpeltonen/sbt-idea 플러그인
+.idea_modules/
+
+# JIRA 플러그인
+atlassian-ide-plugin.xml
+
+# 필기체 Clojure 플러그인
+.idea/replstate.xml
+
+# SonarLint 플러그인
+.idea/sonarlint/
+
+# Crashlytics 플러그인(Android Studio 및 IntelliJ용)
+com_crashlytics_export_strings.xml
+crashlytics.속성
+crashlytics-build.properties
+패브릭.속성
+
+# 에디터 기반 Rest 클라이언트
+.idea/http요청
+
+# Android 스튜디오 3.1+ 직렬화된 캐시 파일
+.idea/caches/build_file_checksums.ser
+
+### Intellij+모든 패치 ###
+# 코드 스타일 설정과 실행 구성을 제외한 모든 것을 무시합니다.
+# 팀 내에서 공유되어야 하는 항목입니다.
+
+.아이디어/*
+
+!.아이디어/코드스타일
+!.idea/runConfigurations
+
+### 자바 ###
+# 컴파일된 클래스 파일
+*.수업
+
+# 로그 파일
+*.통나무
+
+# BlueJ 파일
+*.ctxt
+
+# Java용 모바일 도구(J2ME)
+.mtj.tmp/
+
+# 패키지 파일 #
+*.항아리
+*.전쟁
+*.nar
+*.귀
+*.지퍼
+*.tar.gz
+*.rar
+
+# 가상 머신 충돌 로그, http://www.java.com/en/download/help/error_hotspot.xml 참조
+hs_err_pid*
+replay_pid*
+
+### 윈도우즈 ###
+# Windows 썸네일 캐시 파일
+Thumbs.db
+Thumbs.db:암호화 가능
+ethhumbs.db
+ehthumbs_vista.db
+
+# 덤프 파일
+*.스택덤프
+
+# 폴더 구성 파일
+[Dd]esktop.ini
+
+# 파일 공유에 사용되는 휴지통
+$재활용.BIN/
+
+# Windows 설치 프로그램 파일
+*.택시
+*.msi
+*.msix
+*.msm
+*.msp
+
+# 윈도우 단축키
+*.lnk
+
+### 그래들 ###
+.gradle
+**/짓다/
+!src/**/빌드/
+
+# Gradle GUI 구성을 무시합니다.
+Gradle-app.setting
+
+# Gradle 래퍼 jar 파일을 무시하지 마세요(.jar 파일은 일반적으로 무시됩니다).
+!gradle-wrapper.jar
+
+# Gradle 래퍼 속성을 무시하지 마세요.
+!gradle-wrapper.properties
+
+# 프로젝트 캐시
+.gradletasknamecache
+
+# Eclipse Gradle 플러그인 생성 파일
+# 이클립스 코어
+.프로젝트
+# JDT 관련(Eclipse Java 개발 도구)
+.classpath
+
+### Gradle 패치 ###
+# 자바 힙 덤프
+*.hprof
+
+# https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows 끝
