@@ -10,7 +10,9 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
+import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Getter // 모든 필드에 접근한다.
 @ToString // 쉽게 볼 수 있도록 표현해준다.
@@ -39,6 +41,16 @@ public class Article {
     @Setter @Column(nullable = false) private String title; // 제목 , NOT NULL, nullable은 기본이 true 이다.
     @Setter @Column(nullable = false, length = 10000) private String content; // 본문 , NOT NULL
     @Setter private String hashtag; // 해시태그 , null 가능
+
+
+    //24.03.18
+    // 양방향 바인딩 작성. one To Many
+    // List, Map, Set 등 용도에 따라 다르다.
+    // Set 은 article에 연동되어 있는 comment 는 중복을 허용하지 않고 다 여기에서 모아서 collection 으로 보겠다 는 의도임.
+    @ToString.Exclude
+    @OrderBy("id")
+    @OneToMany(mappedBy = "article", cascade = CascadeType.ALL) // mappedBy 은 article 테이블로 부터 온 것이다라고 하는 것이다. 안써주면, article 과 article Comment를 합쳐 하나의 테이블로 만들어버림 24.03.18
+    private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
 
     //메타 데이터 , NOT NULl
     // 자동으로 JPA를 만들어 준다. -> JPA Auditing
