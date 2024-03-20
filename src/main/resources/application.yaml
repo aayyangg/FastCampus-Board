@@ -33,6 +33,7 @@ spring:
 #      hibernate properties ?? ??
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
+  h2.console.enabled: true
   sql.init.mode: always
   data.rest:
     base-path: /api
@@ -70,3 +71,5 @@ spring:
 spring:
   config.activate.on-profile: test
   datasource.url: jdbc:h2:mem:testdb
+
+---
