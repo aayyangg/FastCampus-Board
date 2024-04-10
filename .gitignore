@@ -1,9 +1,13 @@
 # https://www.toptal.com/developers/gitignore/api/java,gradle,intellij+all,windows에 의해 생성됨
 # https://www.toptal.com/developers/gitignore?templates=java,gradle,intellij+all,windows에서 편집하세요.
 
+### Querydsl
+/src/main/generated
+
 ### Intellij+모두 ###
 # JetBrains IDE 포함: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm 및 Rider
 # 참조: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
 
 # 사용자별 항목
 .idea/**/workspace.xml
