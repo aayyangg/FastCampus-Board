@@ -6,6 +6,7 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -19,7 +20,7 @@ import java.util.Objects;
 })
 // 테이블에 인덱스를 건다.
 // 여러개 써줘야 하니 {} 작성한다.
-
+@EntityListeners(AuditingEntityListener.class)
 @Entity // 이 도메인은 엔티티라고 명시한다.
 public class ArticleComment {
     @Id

@@ -8,6 +8,7 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
@@ -24,7 +25,7 @@ import java.util.Set;
 })
 // 테이블에 인덱스를 건다.
 // 여러개 써줘야 하니 {} 작성한다.
-
+@EntityListeners(AuditingEntityListener.class) // 이게 있어야 돌아간다.? 24.03.19
 @Entity // 이 도메인은 엔티티라고 명시한다.
 public class Article {
     @Id
