@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>게시판 페이지</title>
 </head>
 <body>
-
-    <header>
-        header 삽입부
-        <hr>
-    </header>
+<!--header.html 파일을 연결하는 부분임.
+{뷰페이지명 :: 엘리멘트명}
+header.html에 header를 매핑해라라는 의미임.
+생략 가능 <header th:replace="header :: header"></header>-->
+    <header th:replace="~{header :: header}"></header>
     <main>
 <!--        1. 검색창-->
         <form>
@@ -76,11 +76,7 @@
             </table>
         </nav>
     </main>
-    <footer>
-        footer 삽입부
-        <hr>
-    </footer>
-
+<footer th:replace="~{footer :: footer}"></footer>
 
 </body>
 </html>
