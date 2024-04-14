@@ -46,15 +46,15 @@ public class FastcampusBoardApplication {
 
 		//24.03.20
 		//delete
-		Article article = articleRepository.findById(1L).orElseThrow();
-		long previousArticleCount = articleRepository.count(); // 삭제 전, 글 갯수 확인
-		long previousArticleCommentCount = articleCommnetRepository.count(); // 글이 삭제 될 시, 댓글 수도 지워지니깐, 지워지기 전 댓글 수도 확인한다.
+		//Article article = articleRepository.findById(1L).orElseThrow();
+		//long previousArticleCount = articleRepository.count(); // 삭제 전, 글 갯수 확인
+		//long previousArticleCommentCount = articleCommnetRepository.count(); // 글이 삭제 될 시, 댓글 수도 지워지니깐, 지워지기 전 댓글 수도 확인한다.
 
 		// 글이 삭제 될 때, 지워지는 댓글 수를 미리 확인한다.
 		// 양방향 바인딩을 통해 글의 댓글을 가져올 수 있다.
-		int deletedCommentsSize = article.getArticleComments().size();
+		//int deletedCommentsSize = article.getArticleComments().size();
 
-		articleRepository.delete(article);
+		//articleRepository.delete(article);
 
 	}
 
